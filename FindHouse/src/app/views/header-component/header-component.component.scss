@@ -1,26 +1,96 @@
-.container {
-  background-color: #00ffff;
-  float: left;
+.nav {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ff8000;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.container {
+  width: 80%;
   height: 70px;
-  .logo {
-    float: left;
-    width: 10%;
-    height: 100%;
-    img {
-      max-width: 100%;
-    }
-  }
-  .search {
-    float: left;
-    width: 40%;
-    background-color: green;
-    height: 100%;
-  }
-  .menu {
-    float: left;
-    width: 10%;
-    background-color: yellow;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+}
+//logo header
+.logo {
+  height: 100%;
+  flex-grow: 2;
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 100px;
   }
 }
+// search header
+.search {
+  height: 100%;
+  // flex-grow: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10px;
+}
+.search-container {
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-container:hover > .search-input {
+  width: 250px;
+}
+
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn .fas {
+  color: #ff8000;
+}
+
+.search-container:hover {
+  animation: 0.15s linear 3;
+}
+
+//menu header
+.menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 3;
+  .list-item {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}
+.item:hover {
+  color: #fff !important;
+  cursor: pointer;
+}
+//background
