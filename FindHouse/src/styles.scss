@@ -4,3 +4,16 @@ body {
   background-color: #f6f5f2;
   font-family: "Montserrat", Sans-serif;
 }
+.container {
+  width: 100%;
+  .page {
+    width: 80%;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+}
+
+.clearfix {
+  clear: both;
+  content: "";
+}

@@ -1,0 +1,16 @@
+.nav {
+  width: 100%;
+  display: flex;
+  background-color: #ff8000;
+  height: 200px;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    width: 35%;
+    height: 90%;
+    border-right: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+  }
+}
