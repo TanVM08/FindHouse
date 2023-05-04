@@ -6,14 +6,21 @@ body {
 }
 .container {
   width: 100%;
-  .page {
-    width: 80%;
-    background-color: #ffffff;
-    margin: 0 auto;
+  .view-all {
+    margin-top: 70px;
+    .page {
+      width: 80%;
+      background-color: #ffffff;
+      margin: 0 auto;
+    }
   }
 }
 
 .clearfix {
   clear: both;
   content: "";
+}
+.title {
+  font-size: 32px;
+  color: #ff8000;
 }

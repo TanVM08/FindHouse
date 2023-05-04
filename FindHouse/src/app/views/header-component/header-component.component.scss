@@ -84,8 +84,12 @@
     justify-content: space-between;
     align-items: center;
     .item {
-      color: #fff;
+      color: #fff !important;
       text-transform: uppercase;
+      a {
+        color: #fff !important;
+        text-decoration: none;
+      }
     }
   }
 }

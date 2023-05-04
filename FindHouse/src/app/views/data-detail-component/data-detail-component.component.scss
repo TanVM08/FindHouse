@@ -1,0 +1,19 @@
+.photos {
+  display: flex;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  .main-photo {
+    flex-grow: 1;
+    background-color: aqua;
+  }
+  .sub-photo {
+    flex-grow: 1;
+    background-color: yellow;
+    .item {
+      width: 50%;
+      height: 50%;
+      display: inline-block;
+    }
+  }
+}
