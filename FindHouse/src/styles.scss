@@ -12,6 +12,7 @@ body {
       width: 80%;
       background-color: #ffffff;
       margin: 0 auto;
+      border-radius: 15px;
     }
   }
 }
@@ -35,4 +36,18 @@ body {
 }
 .c3333 {
   color: #333333;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.text-content {
+  font-family: "Montserrat", Sans-serif !important;
+  font-size: 16px;
+  letter-spacing: 0;
+  white-space: pre-wrap;
+  margin: 0px !important;
+  color: #000000;
 }
