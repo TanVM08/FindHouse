@@ -32,9 +32,11 @@
 
 //slider
 @mixin white-gradient {
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
 }
 
 $animationSpeed: 40s;
@@ -110,7 +112,35 @@ $animationSpeed: 40s;
   .slide-track:hover {
     animation-play-state: paused;
   }
-  img:hover{
+  img:hover {
     opacity: 0.8;
+  }
+}
+.list-room {
+  width: 100%;
+  display: flex;
+  .item {
+    width: 90%;
+    display: flex;
+    border-bottom: 1px solid #cccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    img {
+      width: 40%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .info {
+      margin-left: 10px;
+      line-height: 25px;
+      span {
+        display: block;
+      }
+    }
+  }
+  .item:hover {
+    opacity: 0.8;
+    cursor: pointer;
   }
 }
